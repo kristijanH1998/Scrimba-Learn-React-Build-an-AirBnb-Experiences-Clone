@@ -5,10 +5,15 @@ import Card from "./Card.jsx"
 export default function App() {
   
   const cards = data.map((card) => {
-    return <Card 
-            key = {data.indexOf(card)}
-            {...card}
-           />
+    return (
+      <>
+        <Card 
+          key = {data.indexOf(card)}
+          {...card}
+        />
+        <hr></hr>
+      </>)
+
   })
   return (
     <div className="journal">

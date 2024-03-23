@@ -1,15 +1,23 @@
+
 :root {
   --pink: #f55a5a;
 }
 
-body {
+#root {
   display: flex;
   justify-content: center;
-  align-items: center;
+}
+
+html {
+  font-family: Inter;
 }
 
 * {
   box-sizing: border-box;
+}
+
+body {
+  background-color: lightgrey;
 }
 
 .nav-icon {
@@ -21,28 +29,66 @@ body {
 }
 
 nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   background-color: var(--pink);
+  color: white;
 }
 
 .journal {
-  width: 550px;
-  height: 704px;
+  width: 35%;
+  height: 10%;
+  margin: 1%;
+  background-color: white;
+  overflow: scroll;
 }
 
 .card {
   display: flex;
   flex-direction: row;
-  padding: 2em 0;
+  padding: 3em 3em 2em 2em;
+  height: 30em;
+  overflow: scroll;
 }
 
 .card > img {
-  height: 100%;
   width: 20em;
   object-fit: cover;
   border-radius: 0.3em;
+  height: 25em;
 }
 
-img {
-  display: block;
-  width: 100%;
+.nav-title {
+  font-size: 1em;
+  margin-left: 1%;
+}
+
+.card-title {
+  font-size: 35px;
+  font-weight: 500;
+  margin-bottom: 10%;
+}
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1.5em;
+}
+
+.card-info-first-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: -12%;
+  gap: 3%;
+}
+
+.card-info-first-row > a {
+  margin-left: 10%;
+}
+
+.card-date {
+  font-weight: 800;
 }
