@@ -1,0 +1,48 @@
+:root {
+  --pink: #f55a5a;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.nav-icon {
+  color: var(--pink);
+}
+
+.globe-icon {
+  color: white;
+}
+
+nav {
+  background-color: var(--pink);
+}
+
+.journal {
+  width: 550px;
+  height: 704px;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  padding: 2em 0;
+}
+
+.card > img {
+  height: 100%;
+  width: 20em;
+  object-fit: cover;
+  border-radius: 0.3em;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
