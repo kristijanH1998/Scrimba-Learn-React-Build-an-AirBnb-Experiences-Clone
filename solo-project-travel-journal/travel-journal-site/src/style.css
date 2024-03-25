@@ -92,3 +92,12 @@ nav {
 .card-date {
   font-weight: 800;
 }
+
+a:link, a:visited {
+  color: gray;
+  text-decoration: underline;
+}
+
+a:hover {
+  text-decoration: none;
+}
